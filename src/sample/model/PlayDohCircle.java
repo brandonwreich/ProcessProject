@@ -4,7 +4,7 @@ public class PlayDohCircle
 {
 	//Declaration Section
 	//Data member section
-	// NEED TO BE PRIVATE
+	//NEED TO BE PRIVATE
 	private int size;
 	
 	public PlayDohCircle()
@@ -16,4 +16,11 @@ public class PlayDohCircle
 	{
 		this.size = size;
 	}
+	
+	public String toString()
+	{
+		String description = "I am a Play-Doh circle and my size is " + size;
+		return description;
+	}
+	
 }
