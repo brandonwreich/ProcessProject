@@ -37,6 +37,8 @@ public class SampleController {
 		
 		System.out.println("This is a sample project to show the github and");
 		System.out.println("eclipse process so I develop muscle memory:D");
+		
+		testScanner();
 	}
 	
 	private void testScanner()
@@ -49,6 +51,15 @@ public class SampleController {
 		System.out.println("How old are you?");
 		int ageAnswer = firstScanner.nextInt();
 		System.out.println("You said that you are " + ageAnswer + " years old.");
+		
+		PlayDohCircle changeCircle = new PlayDohCircle();
+		System.out.println("Here is the circle before I change it");
+		System.out.println(changeCircle);
+		System.out.println("Type in a new size - use numbers please");
+		int mySize = firstScanner.nextInt();
+		changeCircle.setSize(mySize);
+		System.out.println("Now look at the circle");
+		System.out.println(changeCircle);
 		
 	}
 }
